@@ -13,3 +13,71 @@ body {
 #prediction-confidence{
     color: grey;
 }
+
+.form-group {
+  margin-bottom: 0px;
+}
+
+.form-control {
+  height:50px
+}
+
+.lead {
+  margin-top: 20px;
+}
+
+button {
+  width: 30%;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+section {
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+}
+h1  {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
+label {
+  font-size: 14px;
+}
+
+#section-1 {
+  background: #2b334f;
+}
+#section-2 {
+  background: #2e5367;
+}
+#section-3 {
+  background: #fcb052;
+}
+#section-4 {
+  background: #267481;
+}
+#section-5 {
+  background: #f06a59;
+}
+#section-6 {
+  background: #ffffff;
+}
+

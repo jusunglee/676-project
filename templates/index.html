@@ -3,15 +3,59 @@
   <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+      <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       <script src="{{ url_for('static', filename='js/script.js') }}"></script>
       <link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet">
+
+      
+
     <meta charset="UTF-8">
     <title>MBTI Classifier</title>
   </head>
   <body>
-      <main role="main" class="container">
+      <section id="section-1">
+          <!-- <h1>Section One</h1> -->
+          <h1>Myer-Briggs Personality Classifier
+              <p class="lead">CSCE-676 Project by Jusung, Ruiwan, Yi</p>
+            <main role="main" class="container">
+
+            <div class="starter-template">
+              
+              
+              <form id='theForm'>
+                <div class="form-group">
+                  <!-- <label for="corpus">Predict your MBTI personality!</label> -->
+                  <input name="corpus" type="corpus" class="form-control" id="corpus aria-describedby="emailHelp" placeholder="Enter a paragraph...">
+                </div>
+                <button type="submit" id="formButton" class="btn btn-primary">Predict</button>
+            </form>
+
+            <div id="results">
+              <h2 id="prediction-label">&zwnj;</h2>
+              <h3 id="prediction-confidence">&zwnj;</h3>
+            </div>
+            </div>
+    
+          </main>
+        </h1>
+        
+      </section>
+      <section id="section-2">
+              <h1>Section Two</h1>
+      </section>
+      <section id="section-3">
+              <h1>Section Three</h1>
+      </section>
+      <section id="section-4">
+              <h1>Section Four</h1>
+      </section>
+      <section id="section-5">
+              <h1>Section Five</h1>
+      </section>
+      <!-- <main role="main" class="container">
 
           <div class="starter-template">
             <h1>Myer-Briggs Personality Classifier</h1>
@@ -30,7 +74,7 @@
           </div>
           </div>
     
-        </main><!-- /.container -->
+        </main>/.container -->
 
   </body>
 </html>
