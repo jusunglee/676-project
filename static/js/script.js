@@ -16,3 +16,26 @@ $("#theForm").ajaxForm(
         }
     }
 )
+
+$(document).ready(function(){
+    var dict = {
+        "I": "E",
+        "E": "I",
+        "S": "N",
+        "N": "S",
+        "T": "F",
+        "F": "T",
+        "J": "P",
+        "P": "J"
+    }
+    $('input[name=toggle]').change(
+        function() { 
+            var state = $(this).attr("state");
+            var newState = dict[state];
+            $(this).attr("state", newState);
+            var place = $(this).attr("place");
+            console.log(newState);
+            $('#' + place).html(newState);
+        }
+    );
+});
