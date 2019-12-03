@@ -91,18 +91,24 @@
                       <div class="span6">
                         <div class="mycontent-left">
                             <p class="description">MBTI personality is composed of 4 different binary <br>sub-personalities. 
-                                <br><br>&zwnj;<br>
+                                <br>&zwnj;<br>
                                 That means there are 8 sub-personalities and 16 distinct <br>personality combinations.
-                                <br>
+                                
                                 <br>&zwnj;<br>
                                 A naive approach is to try a multi-modal 16-group classification.
-                                name="i-toggle"
                                 <br>
                                 However, this results in low performance because of large <br>
                                 number of clusters.<br>&zwnj;<br>
+                                
+                                Instead, let's create a model with 4 binary sub-classifiers <br>for each 
+                                of the subpersonalities because Binary classifiers have higher <br>performance scores.
+                                <br>&zwnj;<br>
+
+                                In addition, this 4-bit model allows for "partial" personality matches, such as
                                 <br>
-                                Instead, let's create a model with 4 binary <br> sub-classifiers for each 
-                                of the subpersonalities.
+                                Introverted vs Extroverted, instead of forcing a person to fit into one of
+                                <br>
+                                16 distinct categories and acting like clusters share no similarity.
                               </p>
                         </div>
                       </div>
@@ -151,6 +157,11 @@
               <br>&zwnj;<br>
               Then, reddit can utilize our algorithm to suggest users in the same classification.
               <br>&zwnj;<br>
+              Since reddit already suggests people with similar interests (subredits), reddit can <br>
+              now suggest people with similar personalities, <b>closing the loneliness gap.</b>
+              <br>&zwnj;<br>
+              While this model is trained on reddit data, you can trivially train the same model on<br>
+              other social media platforms and utilize it there as well.
             </p>
           </h1>
 
