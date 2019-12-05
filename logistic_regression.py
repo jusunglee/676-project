@@ -80,7 +80,7 @@ class MBTILogisticRegressionWithBagOfWords:
             answer[3] = 'P'
             probabilities[3] = 1 - j_prob
 
-        return ''.join(answer), sum(probabilities) / 4
+        return ''.join(answer), probabilities[0] * probabilities[1] * probabilities[2] * probabilities[3]
             
 
 

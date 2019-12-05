@@ -1,3 +1,6 @@
-.ipynb_checkpoints
-__pycache__
-env
+env/
+notebooks/.DS_Store static/.DS_Store
+static/.DS_Store
+.DS_Store
+env/
+__pycache__/
